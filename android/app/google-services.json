@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "702547040428",
+    "project_id": "mynte-bc449",
+    "storage_bucket": "mynte-bc449.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702547040428:android:0a2f384d4fc4967e592709",
+        "android_client_info": {
+          "package_name": "com.example.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702547040428-v5slrrm6hnf3avjq5jj9n60vo87icqc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mynotes",
+            "certificate_hash": "d7cf51140b1b44779f907473e6367f62b51942dc"
+          }
+        },
+        {
+          "client_id": "702547040428-opi9m7sh9faklkhjh9eb2rh8rg66170q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9pp58W7tCAUjfB3eJsp4NBxzVHpnW2NM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702547040428-opi9m7sh9faklkhjh9eb2rh8rg66170q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702547040428-d8k4r4161li4sc8ocvbne8afur1dbu8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.android.application"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702547040428:android:8ad70fe15dd55aa0592709",
+        "android_client_info": {
+          "package_name": "om.example.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702547040428-44cspmgvpgfvvsfqec5ulj9upqsd9jq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "om.example.mynotes",
+            "certificate_hash": "d7cf51140b1b44779f907473e6367f62b51942dc"
+          }
+        },
+        {
+          "client_id": "702547040428-opi9m7sh9faklkhjh9eb2rh8rg66170q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9pp58W7tCAUjfB3eJsp4NBxzVHpnW2NM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702547040428-opi9m7sh9faklkhjh9eb2rh8rg66170q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702547040428-d8k4r4161li4sc8ocvbne8afur1dbu8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.android.application"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
