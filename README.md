@@ -64,7 +64,7 @@ My Notes is an open source project developed by **Ishaan Dwivedi(Me) s**,so any 
 
   </div>
 
- # 2. Dairy Plus(<a href="">IN PROGRESS</a>)
+ # 3. Dairy Plus(<a href="">IN PROGRESS</a>)
  <div>
 <img src = "https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/other%20Projects/d1.png" height="500px">
 <img src = "https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/other%20Projects/d2.png" height="500px">
