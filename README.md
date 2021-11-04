@@ -2,8 +2,8 @@
 ![](https://media0.giphy.com/media/flbcUFdLSHwZC03p11/giphy.gif?cid=ecf05e473n1rpg8u098c485j8fopib9bql7m5qbv13er8nw9&rid=giphy.gif&ct=g)
 ## 🤔 About The App🤔
 
-> My Note is an app to create simple note and add 3 level of tags to them.
-> The uniqueness of the app lies in it's design and dark theme
+> My Notes is an app to create simple notes and add 3 levels of tags to them. 
+> The uniqueness of the app lies in its design and dark theme
 
 ## Quick Peek Into The App
 
