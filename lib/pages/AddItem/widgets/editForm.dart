@@ -3,21 +3,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mynotes/models/note.dart';
+import 'package:mynotes/pages/AddItem/controllers/editController.dart';
 import 'package:mynotes/pages/AddItem/controllers/saveItemController.dart';
 import 'package:mynotes/pages/Home/controllers/homeController.dart';
 import 'package:mynotes/pages/utility/util.dart';
 
-class AddItemForm extends StatelessWidget {
-  AddItemForm({Key? key}) : super(key: key);
+class EditItemForm extends StatelessWidget {
+  Note note;
+  EditItemForm({Key? key, required this.note}) : super(key: key);
   HomeController homeController = Get.find<HomeController>();
-  SaveItemController saveItemController = Get.find<SaveItemController>();
+  EditController editController = Get.find<EditController>();
   TextEditingController _titleController = new TextEditingController();
+
   TextEditingController _descriptinController = new TextEditingController();
+
   String tag = '';
   final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
+    _titleController.text = note.title;
+    _descriptinController.text = note.desc;
+
     return Container(
       // height: h(context) * 0.4,
       child: Form(
@@ -60,10 +68,10 @@ class AddItemForm extends StatelessWidget {
                       controller: _titleController,
                       cursorColor: cursorColor,
                       cursorWidth: 0.8,
-                    style: GoogleFonts.getFont('Open Sans',
-                            color: txtColor, fontSize: 20),
+                      // initialValue: 'asdas',
+                      style: GoogleFonts.getFont('Open Sans',
+                          color: txtColor, fontSize: 20),
                       decoration: InputDecoration(
-                    
                         contentPadding: EdgeInsets.only(left: 10),
                         hintText: '# Take A Small Nap',
                         hintStyle: GoogleFonts.getFont('Open Sans',
@@ -98,8 +106,9 @@ class AddItemForm extends StatelessWidget {
                     ),
                     TextFormField(
                       controller: _descriptinController,
-                       style: GoogleFonts.getFont('Open Sans',
-                            color: txtColor, fontSize: 20),
+                      // initialValue: note.desc,
+                      style: GoogleFonts.getFont('Open Sans',
+                          color: txtColor, fontSize: 20),
                       cursorColor: cursorColor,
                       cursorWidth: 0.8,
                       maxLines: 5,
@@ -162,7 +171,7 @@ class AddItemForm extends StatelessWidget {
                                 unSelectedColor: Colors.black,
                                 textStyle: TextStyle(fontSize: 16)),
                             radioButtonValue: (value) {
-                              saveItemController.tag.value = value.toString();
+                              editController.tag.value = value.toString();
                             },
                             selectedColor: Theme.of(context).primaryColor,
                           ),
@@ -184,11 +193,10 @@ class AddItemForm extends StatelessWidget {
                           shadowDarkColor: btnColor,
                           shadowLightColor: btnColor),
                       onPressed: () {
-                        saveItemController.title.value = _titleController.text;
-                        saveItemController.desc.value =
-                            _descriptinController.text;
+                        editController.title.value = _titleController.text;
+                        editController.desc.value = _descriptinController.text;
 
-                        saveItemController.saveItem();
+                        editController.editItem(note);
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,

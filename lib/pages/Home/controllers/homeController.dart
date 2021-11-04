@@ -2,8 +2,10 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:mynotes/models/note.dart';
 import 'package:mynotes/models/user.dart';
 import 'package:mynotes/pages/AddItem/addItem.dart';
+import 'package:mynotes/pages/AddItem/widgets/editNote.dart';
 import 'package:mynotes/pages/auth/login.dart';
 import 'package:mynotes/services/firebase_service.dart';
 import 'package:mynotes/services/local_storage.dart';
@@ -64,5 +66,25 @@ class HomeController extends GetxController {
 
   void goToAddPage() {
     Get.to(() => AddItem());
+  }
+
+  void deleteNote(Note note) async {
+    String email = GetStorage().read('email');
+    FirebaseService firebaseService = new FirebaseService();
+    bool res = await firebaseService.removeNoteFromFirebase(note, email);
+    if (!res) print('unable to delete');
+  }
+
+  void removeAllNotes() async {
+    String email = GetStorage().read('email');
+    FirebaseService firebaseService = new FirebaseService();
+    bool res = await firebaseService.removeAllNotes(email);
+    if (!res) print('unable to delete');
+    Get.back();
+  }
+
+  void editNote(Note note) {
+    String email = GetStorage().read('email');
+    Get.to(() => EditNote(note: note));
   }
 }

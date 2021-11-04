@@ -28,7 +28,7 @@ class MyNotes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LocalStorage localStorage = new LocalStorage();
-    Timer(Duration(seconds: 1), () async {
+    Timer(Duration(seconds: 3), () async {
       if (await localStorage.isLogged()) {
         Get.off(()=>Home());
       }

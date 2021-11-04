@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mynotes/pages/utility/util.dart';
 
-class Header extends StatelessWidget {
-  const Header({Key? key}) : super(key: key);
+class EditHeader extends StatelessWidget {
+  const EditHeader({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class Header extends StatelessWidget {
                             Container(
                               margin: EdgeInsets.only(left: 10),
                               padding: EdgeInsets.only(top: 20),
-                              child: txt('Add Item',c: Colors.white,size: 18.0),
+                              child: txt('Edit Note Item',c: Colors.white,size: 18.0),
                             ),
                             Container(
                               margin: EdgeInsets.only(left: 10,top: 3),

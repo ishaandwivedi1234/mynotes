@@ -4,12 +4,18 @@ import 'package:mynotes/models/note.dart';
 import 'package:mynotes/services/firebase_service.dart';
 import 'package:mynotes/services/local_storage.dart';
 
-class SaveItemController extends GetxController {
+class EditController extends GetxController {
   RxString title = ''.obs;
   RxString desc = ''.obs;
   RxString tag = ''.obs;
 
-  void saveItem() async {
+  // EditController(Note note) {
+  //   this.title.value = note.title;
+  //   this.desc.value = note.desc;
+  //   this.tag.value = note.tag;
+  // }
+
+  void editItem(Note oldNote) async {
     if (title.value == '')
       Get.snackbar('Incomplete Form', 'Please add title');
     else if (desc.value == '')
@@ -24,16 +30,15 @@ class SaveItemController extends GetxController {
         // logout
         return;
       }
-      Note note =
+      Note newNote =
           new Note(title: title.value, desc: desc.value, tag: tag.value);
       bool res =
-          await firebaseService.addNoteToFirebase(data['user'].email, note);
+          await firebaseService.editNoteInFirebase(data['user'].email, newNote,oldNote);
 
       if (!res)
         Get.snackbar('Oops ! ', 'faild to save your note, please try again');
       else
         Get.back();
-        
     }
   }
 }

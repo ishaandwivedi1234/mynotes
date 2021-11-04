@@ -14,7 +14,7 @@ class LoginHeader extends StatelessWidget {
         
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage('https://cdn.dribbble.com/users/1008875/screenshots/5262390/media/24064048c6b2a6965d053aec4d24369b.png?compress=1&resize=1600x1200'))
+          image: AssetImage('assets/loginImg.png'))
       )
     );
   }
