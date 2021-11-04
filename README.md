@@ -16,6 +16,9 @@
 <img src="https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/screens/darkAddItem.png" height="500px"/>
 <img src="https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/screens/lightEdit.png" height="500px"/>
 <img src="https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/screens/darkEdit.png" height="500px"/>
+<img src="https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/screens/lightMenu.png" height="500px"/>
+<img src="https://raw.githubusercontent.com/ishaandwivedi1234/mynotes/main/screens/darkMenu.png" height="500px"/>
+
 </div>
 
 ##  Tech Stack Used
