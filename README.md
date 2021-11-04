@@ -33,7 +33,7 @@ Why not, you can <a href="https://github.com/ishaandwivedi1234/mynotes/raw/main/
 
 ## Contribution Manual
 
-Split monk is an open source project developed by **Byte Cruchers**,so any one willing to contribute in this application is welcomed and can follow following steps to get his/her commits merged into main repo.
+My Notes is an open source project developed by **Ishaan Dwivedi(Me) s**,so any one willing to contribute in this application is welcomed and can follow following steps to get his/her commits merged into main repo.
 
 <img src="https://img.icons8.com/doodle/48/000000/one-finger--v1.png" align="center"/> Fork the repo in your github account 
 <img src="https://img.icons8.com/pastel-glyph/64/000000/source-code--v3.png" align="center"/> Perform some changes ( must be contructive or bug removal )
